@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  background-image: url("/img/main5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#mainHeading {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 6em;
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+}
+
+#mainH3 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5em;
+  color: black;
+}
+
+#otherComponent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#tours,
+#tickets,
+#travelInfo,
+#placesToGo {
+  display: flex;
+  align-items: center;
+  margin: 0em 4em 2em 4em;
+  padding: 0 3em;
+  background-color: aliceblue;
+  width: fit-content;
+  border-radius: 6em;
+  transition: all 100ms;
+}
+
+#tours img,
+#tickets img,
+#travelInfo img,
+#placesToGo img {
+  margin-right: 1em;
+  width: 2em;
+  height: 2em;  
+}
+
+#navBar {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; 
+  position: absolute;
+  width: 100%; 
+  top: 0;
+  right: 0; 
+  padding: 0em 5em; 
+}
+
+#search,
+#language {
+  display: flex;
+  align-items: center; 
+  margin: 1em 2em 0.5em 0.1em;
+}
+
+#languageSelect {
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  font-size: 1.7em;
+  height: 2em; /* Match the height to align with other elements */
+  line-height: 1.5em; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center; /* Center the select content */
+}
+
+#languageSelect::after {
+  content: '\25BC'; 
+  color: aliceblue;
+  padding-left: 0.5em;
+  position: absolute;
+  right: 0.5em;
+  pointer-events: none; 
+}
+
+#search img {
+  width: 1.5em;
+  height: 1.5em; 
+}
+
+#PlaNav,
+#MagNav,
+#TicNav {
+  color: aliceblue;
+  display: flex; /* Ensure h4 elements are aligned */
+  align-items: center; 
+  margin: 0.65em 2em 0.5em 0.1em;
+  font-size: 1.7em;
+}
+
+#PlaNav h4,
+#MagNav h4,
+#TicNav h4 {
+  margin: 0; /* Remove default margin */
+  line-height: 1.5em; /* Match the line height */
+  display: flex;
+  align-items: center; /* Center the h4 content */
+}
+
+
+
+
+
+
+
+
+#tours:hover{
+    translate: -5px -5px;
+}
+#tickets:hover{
+    translate: -5px -2px;
+}
+#travelInfo:hover{
+    translate: 5px -2px;
+}
+#placesToGo:hover{
+    translate: 5px -5px;
+}
