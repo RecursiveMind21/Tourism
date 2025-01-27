@@ -1,3 +1,4 @@
+/* Basic body styling */
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +11,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  cursor: default; /* Default cursor */
 }
 
+/* Main heading styling */
 #mainHeading {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -23,6 +26,7 @@ body {
   text-align: center;
 }
 
+/* Subheading styling */
 #mainH3 {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -31,6 +35,7 @@ body {
   color: black;
 }
 
+/* Other component container styling */
 #otherComponent {
   display: flex;
   flex-direction: row;
@@ -40,6 +45,7 @@ body {
   width: 100%;
 }
 
+/* Styling for individual items in other component */
 #tours,
 #tickets,
 #travelInfo,
@@ -54,6 +60,7 @@ body {
   transition: all 100ms;
 }
 
+/* Image styling for the items */
 #tours img,
 #tickets img,
 #travelInfo img,
@@ -63,6 +70,7 @@ body {
   height: 2em;  
 }
 
+/* Navbar styling */
 #navBar {
   display: flex;
   align-items: center; 
@@ -74,6 +82,7 @@ body {
   padding: 0em 5em; 
 }
 
+/* Search and language container styling */
 #search,
 #language {
   display: flex;
@@ -81,6 +90,7 @@ body {
   margin: 1em 2em 0.5em 0.1em;
 }
 
+/* Language select styling */
 #languageSelect {
   background-color: transparent;
   border: none;
@@ -94,8 +104,10 @@ body {
   text-align: center; /* Center the text */
   display: flex;
   align-items: center; /* Center the select content */
+  position: relative;
 }
 
+/* Custom arrow for language select */
 #languageSelect::after {
   content: '\25BC'; 
   color: aliceblue;
@@ -105,11 +117,13 @@ body {
   pointer-events: none; 
 }
 
+/* Search icon styling */
 #search img {
   width: 1.5em;
   height: 1.5em; 
 }
 
+/* Navbar item styling */
 #PlaNav,
 #MagNav,
 #TicNav {
@@ -118,8 +132,10 @@ body {
   align-items: center; 
   margin: 0.65em 2em 0.5em 0.1em;
   font-size: 1.7em;
+  cursor: default; /* Default cursor */
 }
 
+/* Styling for h4 elements inside navbar items */
 #PlaNav h4,
 #MagNav h4,
 #TicNav h4 {
@@ -129,22 +145,23 @@ body {
   align-items: center; /* Center the h4 content */
 }
 
-
-
-
-
-
-
-
-#tours:hover{
-    translate: -5px -5px;
+/* Change cursor to pointer on hover */
+#TicNav:hover,
+#PlaNav:hover,
+#MagNav:hover {
+  cursor: pointer; 
 }
-#tickets:hover{
-    translate: -5px -2px;
+
+/* Hover effects for other components */
+#tours:hover {
+  transform: translate(-5px, -5px);
 }
-#travelInfo:hover{
-    translate: 5px -2px;
+#tickets:hover {
+  transform: translate(-5px, -2px);
 }
-#placesToGo:hover{
-    translate: 5px -5px;
+#travelInfo:hover {
+  transform: translate(5px, -2px);
+}
+#placesToGo:hover {
+  transform: translate(5px, -5px);
 }

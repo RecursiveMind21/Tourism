@@ -1,0 +1,9 @@
+body{
+}
+
+#mainLogin{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
