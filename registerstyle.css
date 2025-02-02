@@ -1,0 +1,65 @@
+/* Apply these styles to your parent container */
+body {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Full height viewport */
+    margin: 0; 
+    background-color: #f4f4f4; /* Light background color for contrast */
+    font-family: 'Arial', sans-serif; /* Default font for the body */
+}
+
+/* Style for the mainRegister div */
+#mainRegister {
+    background-color: #ffffff; /* White background for the form */
+    width: 30%;
+    padding: 30px; /* Padding for spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    gap: 20px; /* Space between elements */
+}
+
+/* Style for input fields, select dropdown, and button */
+#mainRegister input,
+#mainRegister select,
+#mainRegister button {
+    width: 100%;
+    padding: 12px; /* Padding for input fields, select dropdown, and button */
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Specific styling for input fields and select dropdown */
+#mainRegister input,
+#mainRegister select {
+    font-size: 16px; /* Font size for input fields and select dropdown */
+}
+
+/* Specific styling for submit button */
+#mainRegister button {
+    background-color: #ff5c5c; /* Warm and inviting button color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 18px; /* Slightly larger font for button */
+    font-weight: bold; /* Bold text for button */
+}
+
+/* Hover effect for submit button */
+#mainRegister button:hover {
+    background-color: #e04e4e; /* Darker red on hover */
+}
+
+/* Form input focus effect */
+#mainRegister input:focus,
+#mainRegister select:focus {
+    border-color: #ff5c5c; /* Border color change on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(255, 92, 92, 0.5); /* Subtle shadow effect on focus */
+}
